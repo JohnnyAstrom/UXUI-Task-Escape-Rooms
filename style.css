@@ -1,0 +1,625 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-width: 350px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        width:86%;
+        margin:7% 7%;
+    }
+
+    to {
+        opacity: 1;
+        width:90%;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
+
+
+/* Javascript-created elements for smaller screens-menu*/
+
+.error__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error__message {
+    color: red;
+    font-size: 2em;
+}
+
+.page-wrapper-animate {
+    animation-name: fadeOut;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+} 
+
+.menu-background {
+    opacity:0;
+    animation-name: fadeIn;
+    animation-delay: 300ms;
+    animation-timing-function: ease;
+    animation-duration: 100ms;
+    animation-fill-mode: forwards;
+
+    width: 90%;
+    height: 94vh;
+    background-color: #021928;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 5% 5%;
+    z-index: 5;
+}
+
+.menu-cross-div {
+    display: flex;
+    justify-content: right;
+    background-color: #021928;
+}
+
+.menu-cross{
+    opacity:0;
+    animation-name:fadeIn;
+    animation-duration: 100ms;
+    animation-delay: 400ms;
+    animation-fill-mode: forwards;
+}
+
+.menu-links-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #021928;
+    width: 100%;
+    height: 90%;
+}
+
+.menu-links-div a {
+    margin: 0px 0px 70px 0px;
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.menu-cross-link {
+    margin-top: 20px;
+    margin-right: 20px;
+
+}
+
+.hamburger-link {
+    margin-left: auto;
+    margin-right: 5%;
+    margin-bottom: 30px;
+}
+
+
+/* END Javascript-created elements for smaller screens-menu */
+
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 145px;
+    background-color: #021928;
+}
+
+.header__logo {
+    width: 130px;
+    margin-left: 30px;
+
+}
+
+.header__main-title {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    width: 100px;
+}
+
+.header__desktop-menu {
+    display: none;
+}
+
+.header__menuLink {
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+.top-image__img {
+    width: 100%;
+}
+
+.top-image__img--desktop {
+    display: none;
+}
+
+.nav-links-top,
+.nav-links-bottom {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.nav-links-top__on-site,
+.nav-links-bottom__on-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    min-width: 250px;
+    height: 70px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #021928;
+    background-color: #8ACFE5;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+.nav-links-top__online,
+.nav-links-bottom__online {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #36769D;
+    margin-top: 30px;
+}
+
+.john-doe,
+.john-doe--right {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    flex-wrap: wrap;
+}
+
+.john-doe--right {
+    display: none;
+}
+
+.john-doe__img {
+    height: 80px;
+    margin-right: 20px;
+
+}
+
+.john-doe__text {
+    font-size: 1.5rem;
+    width: 330px;
+    max-width: 600px;
+    font-style: italic;
+
+}
+
+.john-doe__small-text {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+.story-text-and-link {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #021928;
+    color: #fff;
+    font-size: 1.75rem;
+}
+
+.story-text-and-link__text {
+    padding: 0px 20px;
+}
+
+.story-text-and-link__link {
+    color: #8ACFE5;
+    display: block;
+    margin: 50px auto 80px auto;
+    text-decoration: none;
+    padding: 20px 4px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    max-width: 308px;
+    border: 2px solid #8ACFE5;
+    border-radius: 3px;
+}
+
+.teambuilding__image-of-colleagues {
+    width: 100%;
+}
+
+.teambuilding__image-of-colleagues--big {
+    display: none;
+}
+
+.teambuilding__heading,
+.play-online__heading {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 25px 20px 20px 20px;
+}
+
+.teambuilding__text,
+.play-online__text {
+    font-size: 1.5rem;
+    padding: 0px 20px 0px 20px;
+}
+
+.teambuilding__link,
+.play-online__link {
+    background-color: #E3170A;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 5px;
+    text-align: center;
+    width: 310px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 50px 0px 50px 20px;
+
+}
+
+.play-online__link {
+    margin-bottom: 100px;
+}
+
+.play-online__img {
+    width: 100%;
+}
+
+.play-online__img--big {
+    display: none;
+}
+
+.foot {
+    background-color: #021928;
+    color: #fff;
+    padding: 60px 25px;
+    font-size: 1.1rem;
+}
+
+.foot__heading {
+    margin-bottom: 10px;
+}
+
+.foot__text {
+    margin-bottom: 40px;
+}
+
+.foot__sitemap {
+    margin-bottom: 10px;
+}
+
+.foot a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.foot__legal {
+    margin-bottom: 25px;
+}
+
+.foot__play-onsite {
+    margin-bottom: 40px;
+}
+
+.foot__follow {
+    margin-bottom: 8px;
+}
+
+
+@media screen and (min-width: 1000px) {
+    .header {
+        height: 215px;
+        flex-wrap: wrap;
+    }
+
+    .header__main-title {
+        width: auto;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-left: 30px;
+        margin-top: 45px;
+    }
+
+    .header__desktop-menu {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        color: #fff;
+    }
+
+    .header__ul {
+        list-style: none;
+        display: flex;
+    }
+
+    .header__desktop-menu a {
+        margin: auto 50px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+    .header__play-online,
+    .header__play-onsite,
+    .header__story,
+    .header__contact {
+        color: #fff;
+    }
+
+    .header__play-online:hover,
+    .header__play-onsite:hover,
+    .header__story:hover,
+    .header__contact:hover {
+        color: #8ACFE5;
+    }
+
+    .hamburger-link {
+        display: none;
+    }
+
+    .top-image__img {
+        display: none;
+    }
+
+    .top-image__img--desktop {
+        display: block;
+        width: 100%;
+    }
+
+    .nav-links-top {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 0px;
+        transform: translateY(-35px);
+    }
+
+    .nav-links-top__online {
+        line-height: 70px;
+        text-align: center;
+        width: 300px;
+        height: 70px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #fff;
+        background-color: #E3170A;
+        text-decoration: none;
+        border-radius: 5px;
+        order: -1;
+        margin-top: 0px;
+        margin-right: 25px;
+    }
+
+    .nav-links-bottom {
+        margin-top: 70px;
+        margin-bottom: 90px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav-links-bottom__online {
+        line-height: 70px;
+        text-align: center;
+        width: 300px;
+        height: 70px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #fff;
+        background-color: #E3170A;
+        text-decoration: none;
+        border-radius: 5px;
+        order: -1;
+        margin-top: 0px;
+        margin-right: 25px;
+    }
+
+    .john-doe-wrapper {
+        max-width: 1100px;
+        display: flex;
+        margin: 20px auto 70px auto;
+        justify-content: center;
+    }
+
+    .john-doe--right {
+        display: flex;
+    }
+
+    .john-doe__text {
+        width: 390px;
+    }
+
+
+
+    .john-doe__small-text {
+        margin-right: 60px;
+    }
+
+    .popular-challenges__participants {
+        width: 200px;
+        text-align: right;
+    }
+
+    .story-text-and-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        padding: 0px;
+    }
+
+    .story-text-and-link__text {
+        width: 39rem;
+        margin-top: 70px;
+    }
+
+    .story-text-and-link__link {
+        width: 308px;
+        margin-top: 30px;
+    }
+
+    .teambuilding,
+    .play-online {
+        display: flex;
+    }
+
+    .teambuilding__image-of-colleagues,
+    .play-online__img {
+        display: none;
+    }
+
+
+    .teambuilding__image-of-colleagues--big,
+    .play-online__img--big {
+        display: inline-block;
+        min-width: 50%;
+    }
+
+    .play-online__img--big {
+        order: 1;
+    }
+
+    .teambuilding__heading,
+    .play-online__heading {
+        padding: 0px;
+        width: 420px;
+        min-width: 400px;
+    }
+
+    .teambuilding__text,
+    .play-online__text {
+        margin-top: 15px;
+        padding: 0px;
+        width: 420px;
+    }
+
+    .play-online__link,
+    .teambuilding__link {
+        margin: 30px 115px 0px 0px;
+        padding: 0px;
+    }
+
+    .play-online {
+        margin-bottom: 150px;
+    }
+
+    .teambuilding__column,
+    .play-online__column {
+        display: flex;
+        min-width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foot {
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-rows: 150px 250px 60px;
+        grid-template-columns: 10% 50% 18% 15%;
+    }
+
+    .foot__left-content {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        width: 60%;
+    }
+
+    .foot__middle-content {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+
+    .foot__right-content {
+        grid-column: span 2;
+        grid-row: 2 / 3;
+
+    }
+
+    .foot__left-content,
+    .foot__middle-content,
+    .foot__right-content {
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 428px) {
+    .john-doe {
+        text-align: center;
+    }
+
+    .john-doe__small-text {
+        margin: 10px 0px 0px 0px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .popular-challenges {
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 370px) {
+    .popular-challenges__second-title {
+        font-size: 1.5rem;
+    }
+}
+
+.link__hover:hover {
+color: lightgray;
+}
+
+.hover__effect:hover {
+    border-radius: 8px;
+}
+
+button:active {
+    transform: scale(0.96);
+    box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.24);
+}
+
+a:active {
+    transform: scale(0.96);
+}

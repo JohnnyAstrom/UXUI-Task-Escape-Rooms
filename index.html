@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Hacker Escape Room</title>
+
+    <meta property='og:title' content='Hacker Escape Room' />
+    <meta property='og:desctiption' content='Description of the sites content' />
+    <meta property='og:image' content='images/image_2.webp' />
+    <meta property='og:type' content='website' />
+    <meta property='og:url' content='https://patseroni.github.io/Assignment-2_Startpage-Escape-Rooms/' />
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='booking.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='animate.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='challenges.css'>
+    
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <a href="index.html"><img class="header__logo" src="images/Group_1.png" alt="Escape room logotype"></a>
+            <h1 class="header__main-title">Hacker Escape Rooms</h1>
+
+            <!-- visible at >= 1000px -->
+            <nav class="header__desktop-menu">
+                <ul class="header__ul">
+                    <li><a class="header__play-online" href="challenges.html?filter=online">Play online</a></li>
+                    <li><a class="header__play-onsite" href="challenges.html?filter=onsite">Play on-site</a></li>
+                    <li><a class="header__story" href="#">The story</a></li>
+                    <li><a class="header__contact" href="#">Contact us</a></li>
+                </ul>
+            </nav>
+            <!-- / -->
+        </header>
+        <div id="div"></div>
+        <main>
+            <div class="top-image">
+                <img class="top-image__img" src="images/image_2.webp"
+                    alt="image of a person in a hoodie sitting at the computer">
+            </div>
+
+            <!-- visible at >= 1000px -->
+            <div class="top-image--desktop">
+                <img class="top-image__img--desktop" src="images/top-image_desktop.webp"
+                    alt="image of a person in a hoodie sitting at the computer">
+            </div>
+            <!-- / -->
+
+            <nav class="nav-links-top">
+                <a class="nav-links-top__on-site hover__effect" href="challenges.html?filter=onsite">On-site Challenges</a>
+                <a class="nav-links-top__online hover__effect" href="challenges.html?filter=online">Online challenges</a>
+            </nav>
+
+            <div class="john-doe-wrapper">
+                <section class="john-doe">
+                    <img class="john-doe__img" src="images/face.png" alt="image of John Doe">
+                    <q class="john-doe__text">This is a quote about how
+                        amazing this place is and how
+                        much fun me and my friends
+                        had when we tried it</q>
+                    <p class="john-doe__small-text">John Doe, visited us in September 2021</p>
+                </section>
+
+                <!-- visible at width 1000px -->
+                <section class="john-doe--right">
+                    <img class="john-doe__img" src="images/face.png" alt="image of John Doe">
+                    <q class="john-doe__text">This is a quote about how
+                        amazing this place is and how
+                        much fun me and my friends
+                        had when we tried it</q>
+                    <p class="john-doe__small-text">John Doe, visited us in September 2021</p>
+                </section>
+                <!-- / -->
+            </div>
+
+            <h2 class="popular-challenges__main-title">Popular challenges right now</h2>
+
+            <div class="popular__challenges">
+                <div class="error__wrapper"></div>
+                <div class="challenges__wrapper"></div>
+            </div>
+
+            <nav class="nav-links-bottom">
+                <a class="nav-links-bottom__on-site hover__effect" href="challenges.html?filter=onsite">On-site Challenges</a>
+                <a class="nav-links-bottom__online hover__effect" href="challenges.html?filter=online">Online challenges</a>
+            </nav>
+
+            <section class="story-text-and-link">
+                <p class="story-text-and-link__text">Quodsi haberent magnalia inter potentiam et divitias, et non illam
+                    quidem
+                    haec eo spectant haec quoque vos
+                    omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
+                <a class="story-text-and-link__link hover__effect" href="#">Read the full story</a>
+            </section>
+
+            <section class="teambuilding">
+                <img class="teambuilding__image-of-colleagues" src="images/colleagues.webp"
+                    alt="image of two colleagues sitting at a computer">
+
+                <!-- visible at >= 1000px -->
+                <img class="teambuilding__image-of-colleagues--big" src="images/colleagues_big.webp"
+                    alt="image of two colleagues sitting at a computer">
+                <!-- / -->
+
+                <div class="teambuilding__column">
+                    <h2 class="teambuilding__heading">Play with your friends or build your team stronger at work</h2>
+                    <p class="teambuilding__text">Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil
+                        inuitam.
+                        Nemo nocere tibi erit, et non inimicos, et</p>
+                    <a class="teambuilding__link hover__effect" href="#">Book on-site today</a>
+                </div>
+            </section>
+
+            <section class="play-online">
+                <img class="play-online__img" src="images/kelly.webp" alt="A girl sitting at the computer">
+
+                <!-- visible at >= 1000px -->
+                <img class="play-online__img--big" src="images/Kelly_big.webp" alt="A girl sitting at the computer">
+                <!-- / -->
+
+                <div class="play-online__column">
+                    <h2 class="play-online__heading">Play online or visit our venue for one of our 25 escape rooms</h2>
+                    <p class="play-online__text">Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil
+                        inuitam.
+                        Nemo nocere tibi erit, et non
+                        inimicos, et</p>
+                        <a class="play-online__link hover__effect" href="challenges.html">See all challenges</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="foot">
+            <div class="foot__left-content">
+                <h3 class="foot__heading">[Esc] Hacker Escape Rooms</h3>
+                <p class="foot__text">Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo
+                    spectant
+                    haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
+            </div>
+
+            <div class="foot__middle-content">
+                <h3 class="foot__sitemap">Site map</h3>
+                <a class="foot__Story link__hover" href="#">The story</a>
+                <a class="foot__contact link__hover" href="#">Contact Us</a>
+                <a class="foot__legal link__hover" href="#">Legal</a>
+                <a class="foot__play-online link__hover" href="challenges.html?filter=online">Play online</a>
+                <a class="foot__play-onsite link__hover" href="challenges.html?filter=onsite">Play on-site</a>
+            </div>
+
+            <div class="foot__right-content">
+                <h3 class="foot__follow link__hover">Follow us on</h3>
+                <a class="foot__facebook link__hover" href="#">Facebook</a>
+                <a class="foot__instagram link__hover" href="#">Instagram</a>
+                <a class="foot__twitter link__hover" href="#">Twitter</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="ui.js"></script>
+    <script src="api.js"></script>
+    <script src="frontpage.js"></script>
+    <script src="booking.js"></script>
+</body>
+
+
+
+</html>
